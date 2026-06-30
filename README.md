@@ -1,26 +1,34 @@
 # 🏡 Casa IGO
 
-Interactive architectural website developed to showcase a residential project through an immersive 3D experience directly in the browser.
+An interactive architectural website developed to present **Casa IGO**, a residential project through an immersive 3D web experience.
 
 ## 🌐 Live Demo
 
-https://ivox.com.mx/Casa_IGO/
+🔗 https://ivox.com.mx/Casa_IGO/
 
-## 📖 Overview
+---
 
-Casa IGO is a modern architectural presentation built with HTML, CSS and JavaScript. The project integrates a real-time 3D viewer using Three.js, allowing users to explore the architectural model without installing additional software.
+## 📖 About
 
-The main goal of this project is to improve the way architectural proposals are presented to clients through interactive web technologies.
+Casa IGO is a modern architectural visualization built entirely with **HTML, CSS and Vanilla JavaScript**.
+
+The project integrates a real-time 3D viewer powered by **Three.js**, allowing clients and users to explore the architectural model directly from the browser without installing additional software.
+
+This project was designed to improve the digital presentation of architectural proposals by combining clean visual design with interactive 3D technologies.
+
+---
 
 ## ✨ Features
 
-- Interactive 3D viewer
 - Responsive design
-- Optimized GLB model
+- Interactive 3D viewer
 - Real-time rendering
-- Mobile and desktop support
-- Modern UI
-- Lightweight static website
+- Optimized GLB model
+- Mobile & Desktop support
+- Smooth camera controls
+- Modern minimalist interface
+
+---
 
 ## 🛠 Technologies
 
@@ -33,30 +41,52 @@ The main goal of this project is to improve the way architectural proposals are 
 - OrbitControls
 - GLB / glTF
 
+---
+
 ## 📂 Project Structure
 
 ```text
 assets/
+├── images/
+└── models/
+
 css/
 js/
+
 index.html
 ```
 
+---
+
 ## 🚀 Future Improvements
 
-- Loading screen
 - Camera presets
+- Loading animations
 - Fullscreen mode
-- Environment customization
-- Project gallery
+- Better lighting controls
+- Multiple architectural projects
 - Performance optimization
+
+---
 
 ## 👨‍💻 Author
 
-Octavio Velázquez
+**Octavio Velázquez**
 
-Portfolio:
+Portfolio
+
 https://octaviovr5.github.io/Portafolio-Octavio/
 
-Website:
+Website
+
 https://ivox.com.mx
+
+GitHub
+
+https://github.com/Octaviovr5
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
