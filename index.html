@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Casa IGO | Interactive Architectural Visualization</title>
+
+  <meta
+    name="description"
+    content="Interactive architectural visualization developed with Three.js, HTML, CSS and JavaScript."
+  >
+
+  <meta
+    name="keywords"
+    content="Architecture, Three.js, WebGL, JavaScript, Frontend, 3D, Architectural Visualization"
+  >
+
+  <meta name="author" content="Octavio Velázquez">
+
+  <meta property="og:title" content="Casa IGO">
+  <meta property="og:description" content="Interactive architectural visualization using Three.js">
+  <meta property="og:image" content="assets/images/fachada-urbana.jpeg">
+  <meta property="og:type" content="website">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ─── HERO ───────────────────────────────────────── -->
+  <header class="hero" id="inicio">
+    <nav class="navbar">
+      <div class="logo">CASA IGO</div>
+      <div class="navlinks">
+        <a href="#concepto">Concepto</a>
+        <a href="#proyecto">Proyecto</a>
+        <a href="#galeria">Galería</a>
+        <a href="#modelo3d">Modelo 3D</a>
+        <a href="#memoria">Memoria</a>
+      </div>
+      <button class="hamburger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="tag">Vivienda — Taller / Narvarte Poniente</span>
+        <h1>Integridad, Geometría y Orden.</h1>
+        <p>
+          Casa IGO entiende la arquitectura como una secuencia de filtros espaciales
+          que separan gradualmente el ámbito público del privado.
+        </p>
+        <a class="btn" href="#galeria">Ver proyecto</a>
+      </div>
+      <div class="hero-card">
+        <img src="assets/images/fachada-urbana.jpeg" alt="Fachada final de Casa IGO" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── CONCEPTO ────────────────────────────────────── -->
+    <section class="section intro" id="concepto">
+      <div>
+        <span class="section-label">Concepto rector</span>
+        <h2>Una pieza brutalista para vivir, trabajar y proteger la privacidad.</h2>
+      </div>
+      <p>
+        El proyecto se desarrolla en un predio compacto de esquina. La fachada trabaja
+        con volúmenes inclinados, concreto aparente y ventanas triangulares que permiten
+        entrada de luz natural sin exponer completamente el interior.
+      </p>
+    </section>
+
+    <!-- ─── FEATURES ─────────────────────────────────────── -->
+    <section class="features" id="proyecto">
+      <article>
+        <h3>01 / Filtros</h3>
+        <p>La planta baja funciona como transición entre ciudad, cochera, oficina y acceso privado.</p>
+      </article>
+      <article>
+        <h3>02 / Geometría</h3>
+        <p>Los triángulos no son decoración: son vacíos controlados dentro de una masa monolítica.</p>
+      </article>
+      <article>
+        <h3>03 / Materialidad</h3>
+        <p>Concreto aparente, texturas sobrias, portón tipo zaguán y una lectura urbana cerrada.</p>
+      </article>
+    </section>
+
+    <!-- ─── MAQUETA FÍSICA ───────────────────────────────── -->
+    <section class="split">
+      <div class="image-wrap tall">
+        <img src="assets/images/maqueta-frontal.jpeg" alt="Maqueta física de Casa IGO" />
+      </div>
+      <div class="split-text">
+        <span class="section-label">Maqueta física</span>
+        <h2>La masa superior protege el interior y convierte la esquina en protagonista.</h2>
+        <p>
+          La composición final evita una fachada plana: cada nivel trabaja con diferente
+          profundidad, generando sombras, ritmo y una presencia urbana más sólida.
+        </p>
+        <ul>
+          <li>Terreno aproximado: 4 × 10 m</li>
+          <li>Uso: vivienda taller</li>
+          <li>Lenguaje: brutalismo minimalista</li>
+          <li>Cliente: arquitecta independiente</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─── INTERIOR ─────────────────────────────────────── -->
+    <section class="interior-section">
+      <div class="interior-content">
+        <span class="section-label">Atmósfera interior</span>
+        <h2>Transición entre ciudad y refugio</h2>
+        <p>
+          El acceso de Casa IGO funciona como un filtro entre el espacio urbano y el ámbito privado.
+          El concreto aparente, la madera y la iluminación indirecta generan una atmósfera cálida
+          dentro de una envolvente monolítica.
+        </p>
+      </div>
+      <div class="interior-image">
+        <img src="assets/images/interior-garage.png" alt="Render interior de Casa IGO" />
+      </div>
+    </section>
+
+    <!-- ─── GALERÍA ──────────────────────────────────────── -->
+    <section class="section gallery" id="galeria">
+      <div class="gallery-title">
+        <span class="section-label">Galería</span>
+        <h2>Proceso y representación</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="large">
+          <img src="assets/images/fachada-urbana.jpeg" alt="Casa IGO ambientada en contexto urbano" />
+          <figcaption>Fachada final ambientada en esquina urbana.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/maqueta-frontal.jpeg" alt="Maqueta frontal" />
+          <figcaption>Maqueta física, vista frontal.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/maqueta-interior.jpeg" alt="Maqueta con interior visible" />
+          <figcaption>Relación entre volumen superior y planta baja.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ─── MODELO 3D ────────────────────────────────────── -->
+    <section class="section model-section" id="modelo3d">
+      <div class="model-text">
+        <span class="section-label">Modelo 3D</span>
+        <h2>Maqueta interactiva</h2>
+        <p>
+          Visualización tridimensional de Casa IGO. Arrastra para rotar, desplaza
+          para hacer zoom y explora la volumetría, los vacíos triangulares y la
+          relación de la fachada con la esquina.
+        </p>
+        <p class="model-hint">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Clic + arrastrar para rotar · Scroll para zoom
+        </p>
+      </div>
+      <div class="model-viewer-wrap">
+        <div id="modelViewer">
+          <div class="model-loading" id="modelLoading">
+            <div class="spinner"></div>
+            <span>Cargando modelo…</span>
+          </div>
+          <div class="model-error" id="modelError" style="display:none">
+            <span>No se encontró el archivo <code>assets/images/maquetablanca.glb</code>.<br>
+            Coloca el modelo en esa ruta para activar el visor.</span>
+          </div>
+        </div>
+        <div class="model-controls-hint" aria-hidden="true">
+          <span>Interactivo · Casa IGO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── MEMORIA ──────────────────────────────────────── -->
+    <section class="section memory" id="memoria">
+      <span class="section-label">Memoria descriptiva breve</span>
+      <h2>Casa IGO</h2>
+      <p>
+        La vivienda-taller responde a la necesidad de integrar actividad profesional y vida privada
+        en un predio reducido. La planta baja concentra el contacto con la ciudad mediante cochera,
+        acceso controlado y área de atención; los niveles superiores funcionan como espacios de
+        transición y resguardo. La fachada se plantea como una masa de concreto perforada por
+        aperturas triangulares, reforzando la idea de orden geométrico, privacidad e iluminación natural.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>
+        Designed & Developed by
+        <strong>Octavio Velázquez</strong>
+    </p>
+
+    <p>
+        Built with HTML5 · CSS3 · JavaScript · Three.js
+    </p>
+
+    <a href="#inicio">
+        Back to top ↑
+    </a>
+
+</footer>
+
+  <!-- Menú hamburger (no necesita Three.js) -->
+  <script src="js/script.js"></script>
+  <!-- Visor 3D — ES Modules -->
+  <script type="module" src="js/viewer3d.js"></script>
+  <!--
+
+=======================================================
+
+Casa IGO
+
+Developed by Octavio Velázquez
+
+Portfolio
+https://octaviovr5.github.io/Portafolio-Octavio/
+
+Website
+https://ivox.com.mx
+
+GitHub
+https://github.com/Octaviovr5
+
+=======================================================
+
+-->
+</body>
+</html>
