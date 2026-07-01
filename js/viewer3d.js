@@ -58,7 +58,7 @@ renderer.domElement.addEventListener('pointerdown', () => {
 /* ── Cargar GLB ── */
 const loader = new GLTFLoader();
 loader.load(
-  'assets/maquetablanca.glb',
+  'assets/models/casa-igo.glb',
 
   (gltf) => {
     const model = gltf.scene;
